@@ -1,0 +1,28 @@
+<h1 class="typography"><i class="fas fa-road"></i> Pit Stop Roadie</h1>
+<form #login class="form">
+  <mat-form-field class="example-full-width">
+    <mat-label>Email</mat-label>
+    <input type="email" matInput placeholder="example@email.com" required />
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Password</mat-label>
+    <input matInput type="password" placeholder="Password" required />
+  </mat-form-field>
+
+  <div class="form-btn">
+    <button class="login-btn" mat-raised-button color="accent">Sign Up</button>
+    <button class="login-btn" mat-raised-button color="primary">Login</button>
+  </div>
+
+  <div>
+    <button (click)="this.as.userGoogleLogin()" class="form-google-btn">
+      <i class="fab fa-google"></i> Continue with Goolge
+    </button>
+  </div>
+
+  <div class="form-btn form-btn--container">
+    <button mat-button>I forgot my Password</button>
+    <button mat-button>I forgot my Email</button>
+  </div>
+</form>

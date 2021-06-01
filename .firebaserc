@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "rood-foodie": {
+      "hosting": {
+        "food-roadie": [
+          "rood-foodie"
+        ]
+      }
+    }
+  }
+}

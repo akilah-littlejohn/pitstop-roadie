@@ -1,0 +1,33 @@
+<mat-toolbar color="primary">
+  <button
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with menu icon"
+  >
+    <mat-icon>menu</mat-icon>
+  </button>
+
+  <a routerLink="" class="typography">
+    <i class="fas fa-road"></i> Pit Stop Roadie
+  </a>
+  <span class="example-spacer"></span>
+
+  <nav class="nav-link-container" role="navigation">
+    <mat-icon>person</mat-icon>
+    <a class="nav-link" routerLink="/dashboard"> Dashboard </a>
+    <mat-icon>whatshot</mat-icon>
+    <a class="nav-link" routerLink="">Post Experience</a>
+  </nav>
+
+  <button
+    class="login-btn"
+    mat-raised-button
+    color="accent"
+    (click)="this.af.userGetslogout()"
+  >
+    {{!this.usm.currentUser ? "Sign In": "Sign Out"}}
+  </button>
+</mat-toolbar>
+<main>
+  <router-outlet></router-outlet>
+</main>

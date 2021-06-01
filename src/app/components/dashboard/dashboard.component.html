@@ -1,0 +1,34 @@
+<section>
+  <p>
+    Welcome, Roadie <strong>{{ this.ums.currentUser.displayName }} </strong>
+  </p>
+</section>
+<section class="dashboard-c">
+  <mat-toolbar class="dashboard" color="primary">
+    <h1 class="title">Dashboard</h1>
+  </mat-toolbar>
+  <mat-tab-group animationDuration="0ms" mat-align-tabs="end">
+    <mat-tab label="Your Roadie Reviews"> 
+      <mat-card class="card"></mat-card>
+    </mat-tab>
+    <mat-tab label="Manage Account">
+      <mat-card class="card">
+        <p>
+          <mat-icon>person_outline</mat-icon>
+          {{ this.ums.currentUser.displayName }}
+        </p>
+        <p>
+          <mat-icon> email</mat-icon>
+          {{ this.ums.currentUser.email }}
+        </p>
+        <button class="btntwo" mat-button>
+          Change Email and Password <mat-icon>edit</mat-icon>
+        </button>
+        <br>
+         <button mat-button color="warn">
+          Delete Account
+        </button>       
+      </mat-card>
+    </mat-tab>
+  </mat-tab-group>
+</section>

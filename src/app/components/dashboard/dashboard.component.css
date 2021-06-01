@@ -1,0 +1,47 @@
+.dashboard {
+  background: linear-gradient(to right, #f44336,  #93291e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   
+}
+.dashboard-c{
+    width: 80vw;
+}
+.divider {
+    margin: 50px;
+    
+}
+
+.this-card {
+   height: 50px;
+    width:500px
+}
+.card {
+    background-color: #eee;
+    font-size: larger;
+}
+@media screen and (max-width:600px){
+    .card {
+        width: 100%;
+    }
+}
+
+.btn {
+  font-family: 'Montserrat', sans-serif;
+ letter-spacing: 2px;
+ width: 100%;
+ margin: 30px;
+
+}
+.btntwo {
+    color: green;
+}
+.title {
+ font-family: 'Anton', sans-serif;
+ font-size: 40px;;
+}
+
+.tabc {
+      font-family: 'Montserrat', sans-serif;
+      margin: 50px;
+      
+
+}
