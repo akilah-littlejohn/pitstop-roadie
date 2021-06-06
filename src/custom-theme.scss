@@ -1,24 +1,25 @@
 
+@use '~@angular/material' as mat;
 @import '~@angular/material/theming';
 // Plus imports for other components in your app.
 
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
 // Be sure that you only ever include this mixin once!
-@include mat-core();
+@include mat.core();
 
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$road-foodie-primary: mat-palette($mat-red);
-$road-foodie-accent: mat-palette($mat-grey, A200, A100, A400);
+$road-foodie-primary: mat.define-palette(mat.$red-palette);
+$road-foodie-accent: mat.define-palette(mat.$grey-palette, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
-$road-foodie-warn: mat-palette($mat-amber);
+$road-foodie-warn: mat.define-palette(mat.$amber-palette);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
-$road-foodie-theme: mat-light-theme((
+$road-foodie-theme: mat.define-light-theme((
   color: (
     primary: $road-foodie-primary,
     accent: $road-foodie-accent,
@@ -33,5 +34,5 @@ $road-foodie-theme: mat-light-theme((
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
-@include angular-material-theme($road-foodie-theme);
+@include mat.all-component-themes($road-foodie-theme);
 
