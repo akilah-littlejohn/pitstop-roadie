@@ -1,7 +1,9 @@
 .example-spacer {
   flex: 1 1 auto;
 }
-
+.tb {
+  width: 100vw;
+}
 .typography {
 
     text-transform: uppercase;

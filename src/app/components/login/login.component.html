@@ -1,18 +1,18 @@
 <h1 class="typography"><i class="fas fa-road"></i> Pit Stop Roadie</h1>
-<form #login class="form">
+<form #login="ngForm" class="form" >
   <mat-form-field class="example-full-width">
     <mat-label>Email</mat-label>
-    <input type="email" matInput placeholder="example@email.com" required />
+    <input type="email" matInput placeholder="example@email.com" name="email" ngModel required />
   </mat-form-field>
 
   <mat-form-field class="example-full-width">
     <mat-label>Password</mat-label>
-    <input matInput type="password" placeholder="Password" required />
+    <input matInput type="password" placeholder="Password" name="password" ngModel required />
   </mat-form-field>
 
   <div class="form-btn">
-    <button class="login-btn" mat-raised-button color="accent">Sign Up</button>
-    <button class="login-btn" mat-raised-button color="primary">Login</button>
+    <button (click)="this.as.userCreateEmailSignIn(login.value.email, login.value.password)" class="login-btn" mat-raised-button color="accent">Sign Up</button>
+    <button  (click)="this.as.userEmailSignIn(login.value.email, login.value.password)" class="login-btn" mat-raised-button color="primary">Login</button>
   </div>
 
   <div>
