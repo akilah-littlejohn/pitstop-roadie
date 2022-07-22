@@ -8,7 +8,7 @@ import { UserManagementService } from '../../user-management.service';
 })
 export class DashboardComponent implements OnInit {
   constructor(public ums: UserManagementService) {}
-
+  profileName =this.ums.currentUser.displayName || this.ums.currentUser.email;
   ngOnInit(): void { }
 
 }
