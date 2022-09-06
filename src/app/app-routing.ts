@@ -16,10 +16,7 @@ const redirectUnauthorizedToHomePage = () => redirectUnauthorizedTo(['']);
 
 
 const routes: Routes = [
-  {
-    path: '',
-    component: HomeComponent
-  },
+  
   { path: 'login', component: LoginComponent },
   {
     path: 'dashboard',
@@ -27,6 +24,10 @@ const routes: Routes = [
     canActivate: [AngularFireAuthGuard],
     data: { authGuardPipe: redirectUnauthorizedToHomePage },
   },
+  {
+    path: '',
+    component: HomeComponent
+  }
 ];
 
 @NgModule({

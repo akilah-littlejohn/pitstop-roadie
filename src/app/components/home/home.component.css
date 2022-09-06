@@ -1,8 +1,58 @@
-.home-header {
-    width: 90vw;
-    border:red 2px solid;
-    margin: 2rem;
-    display: flex; 
-    flex-direction: column; 
+.home-header--serviceTypes {
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    margin: 20px;
 
-} 
+}
+
+.home-header--container {
+    display: flex;
+    justify-content:flex-end;
+  
+}
+
+h2 {
+    font-family:'Anton', Courier New, Courier, monospace;
+    font-size:3em;
+}
+
+p {
+    font-size: x-large;
+    font-family:'Montserrat', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+    line-height: 1.6;
+    
+}
+
+a {
+    background-color:  #33334d ;
+    border-radius:5px;
+    letter-spacing: 1.5px;
+    display:flex;
+    justify-content: center;
+    width: 15em;
+    padding: 15px;
+    text-transform:uppercase; 
+    color: #fff;
+}
+.home-header {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 3rem;
+}
+.text-box {
+    font-family: 'Montserrat', sans-serif;
+    width: 300px;
+    padding: 15px;
+    display: block;
+    color: #fff;
+    border:none;
+    background: linear-gradient(to right, #ed213a, #93291e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius:5px;
+    letter-spacing: 1.5px;
+    text-transform:uppercase;  
+}
+
