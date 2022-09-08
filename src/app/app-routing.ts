@@ -11,6 +11,7 @@ import {
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
+import { ReviewComponent } from './review/review.component';
 
 const redirectUnauthorizedToHomePage = () => redirectUnauthorizedTo(['']);
 
@@ -18,6 +19,8 @@ const redirectUnauthorizedToHomePage = () => redirectUnauthorizedTo(['']);
 const routes: Routes = [
   
   { path: 'login', component: LoginComponent },
+  { path: 'review', component:ReviewComponent},
+
   {
     path: 'dashboard',
     component: DashboardComponent,

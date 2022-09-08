@@ -8,9 +8,11 @@ import { FormsModule } from '@angular/forms';
 import { MaterialModule } from './material/material.module';
 import { AuthenticationModule } from './authentication/authentication.module';
 import { UserManagementService } from './user-management.service';
+import { ReviewComponent } from './review/review.component';
+import { PostComponent } from './component/post/post.component';
 
 @NgModule({
-  declarations: [AppComponent, routingComponents],
+  declarations: [AppComponent, routingComponents, ReviewComponent, PostComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
